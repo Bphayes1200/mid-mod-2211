@@ -4,4 +4,8 @@ class FoodFacade
       Food.new(food)
     end
   end
+
+  def self.food_search_total(query)
+    x = FoodService.search(query)[:totalHits]
+  end
 end
