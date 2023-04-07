@@ -1,0 +1,10 @@
+<h1>Foods</h1>
+
+<p>Search Results: <%= @result_count %></p>
+
+<% @ten_foods.each do |food| %>
+  <%= food.gtinupc %>
+  <%= food.description %>
+  <%= food.brand_owner %>
+  <%= food.ingredients %>
+<% end %>  
